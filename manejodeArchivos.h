@@ -14,4 +14,6 @@ int crearJugadores();
 
 int crearMazo();
 
+int imprimirMazo();
+
 #endif
