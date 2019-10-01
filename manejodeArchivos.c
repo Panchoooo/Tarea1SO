@@ -5,6 +5,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>  // para open
 #include <unistd.h> // para rmkdir y creat
+#include <dirent.h> // para directorios
 
 #include "manejodeArchivos.h"
 
