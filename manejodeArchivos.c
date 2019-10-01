@@ -81,10 +81,10 @@ int crearMazo(){
   // despues las cartas de negro.
   for(i=0;i<4;i++){
     //eleccion  de colores
-    snprintf(buffer,36, "Mazo/eleccion de colores negra_%d.txt",i+1);
+    snprintf(buffer,37, "Mazo/eleccion de colores negra_%d.txt",i+1);
     creat(buffer,S_IRWXU);
     //+4
-    snprintf(buffer,19, "Mazo/+4 negra_%d.txt",i+1);
+    snprintf(buffer,20, "Mazo/+4 negra_%d.txt",i+1);
     creat(buffer,S_IRWXU);
   }
 
