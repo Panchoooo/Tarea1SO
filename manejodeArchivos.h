@@ -8,6 +8,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>  // para open
 #include <unistd.h> // para rmkdir
+#include <dirent.h> // para directorios
 
 
 int crearJugadores();
