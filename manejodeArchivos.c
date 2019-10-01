@@ -4,7 +4,7 @@
 #include <sys/types.h>  // para mkdir
 #include <sys/stat.h>
 #include <fcntl.h>  // para open
-#include <unistd.h> // para rmkdir
+#include <unistd.h> // para rmkdir y creat
 
 #include "manejodeArchivos.h"
 
