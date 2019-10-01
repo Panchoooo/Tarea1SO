@@ -6,5 +6,6 @@
 int main(){
   crearJugadores();
   crearMazo();
+  imprimirMazo();
   return 0;
 }
