@@ -107,12 +107,9 @@ int imprimirMazo(){
   }
   //leemos archivos en la carpeta Mazo
   while ((ent = readdir (dir)) != NULL){
-      // Nos devolverá el directorio actual (.) y el anterior (..)
-      if ( (strcmp(ent->d_name, ".")!=0) && (strcmp(ent->d_name, "..")!=0) ){
       //imprimimos el archivo
       printf ("%s \n", ent->d_name);
-      }
-    }
+  }
   closedir (dir);
   return EXIT_SUCCESS;
 }
