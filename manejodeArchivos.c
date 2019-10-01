@@ -95,3 +95,25 @@ int crearMazo(){
   free(colores);
   return ret;
 }
+int imprimirMazo(){
+  DIR *dir;
+  struct dirent *ent;
+  // leemos el direcorio de mazo
+  dir = opendir ("Mazo/");
+  //verificamos que no exista un error
+  if (dir == NULL){
+    printf("No puedo abrir el directorio");
+    exit(EXIT_FAILURE);
+  }
+  //leemos archivos en la carpeta Mazo
+  while ((ent = readdir (dir)) != NULL){
+      // Nos devolverá el directorio actual (.) y el anterior (..)
+      if ( (strcmp(ent->d_name, ".")!=0) && (strcmp(ent->d_name, "..")!=0) ){
+      //imprimimos el archivo
+      printf ("%s \n", ent->d_name);
+      }
+    }
+  closedir (dir);
+  return EXIT_SUCCESS;
+}
+
